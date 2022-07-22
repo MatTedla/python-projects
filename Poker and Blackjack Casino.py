@@ -336,13 +336,3 @@ def make_deck() -> List:
     numbers = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', 'King', 'Ace']
 
     return [f"{number} of {suit}" for number in numbers for suit in suits]
-
-
-#pot = "Amount of money you have, adjust this after outer script, the one that will call the variables, is made"
-#my_deck = make_deck()
-# Initialize class first, then access built-in method play
-# my_game = Blackjack(my_deck)
-# my_game.play()
-
-#my_game = TexasHoldem(my_deck)
-#my_game.play()
