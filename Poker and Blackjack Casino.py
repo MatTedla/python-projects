@@ -2,7 +2,6 @@ from typing import Dict, List, Tuple, Union, Optional, Any
 from random import choice, sample
 
 
-# class function for shuffling deck? maybe?
 class Blackjack:
 
     def __init__(self, deck: List):
