@@ -1,5 +1,3 @@
-# ADD EMPTYING DECK UPON REPLAY AND CLEARER HAND RANKS
-
 from typing import Dict, List, Tuple, Union, Optional, Any
 from random import choice, sample
 
@@ -116,12 +114,7 @@ class Poker:
         :param deck: Deck of cards to play blackjack with
         """
         self.deck: List = deck
-        self.rules: str = "Welcome to Poker! You can choose to between basic 5 card poker or Texas Holdem.\n\n" \
-                          "Texas Holdem gives the player 2 cards, and reveals 3 cards from the deck. The player can\n" \
-                          "choose to fold or stay, if they stay another card will be revealed from deck. Up to 2\n" \
-                          "additional cards can be revealed from the deck - the poker rank is  generated based on \n" \
-                          "the cards from deck, alongside the cards in the hand.\n\nIn basic poker,the poker rank is" \
-                          "generated based only on the cards in the hand.\n"
+        self.rules: str = "Welcome to Poker! You can choose to between basic 5 card poker or Texas Holdem.\n\n"
         self.cards_in_play: List = []
         self.removed_cards_list: List = []
         self.suite_count: List[int, int, int, int] = [0, 0, 0, 0]
@@ -345,7 +338,6 @@ def make_deck() -> List:
     return [f"{number} of {suit}" for number in numbers for suit in suits]
 
 
-# Initialize class first, then access built-in method play
 def open_casino(deck: List[int]):
     print("Greetings! Welcome to my casino. What card game would you like to play?\n")
     my_game: Optional[Blackjack, BasicPoker, TexasHoldem]
@@ -357,7 +349,7 @@ def open_casino(deck: List[int]):
         if not select:
             select = input("Please select from the following options.\n\tPress 1 for Blackjack, 2 for Classic Poker, or "
                            "3 for Texas Holdem: ")
-
+        
         if select == "1":
             my_game = Blackjack(my_deck)
         elif select == "2":
@@ -392,16 +384,10 @@ def open_casino(deck: List[int]):
     print("\nThanks for playing in my casino!")
 
 
-
-
+# preparing deck, opening the casino
 my_deck = make_deck()
 open_casino(my_deck)
 
 
-#my_game = Blackjack(my_deck)
-#my_game = TexasHoldem(my_deck)
-#my_game = BasicPoker(my_deck)
 
-# print(my_game)
-# my_game.play()
 
