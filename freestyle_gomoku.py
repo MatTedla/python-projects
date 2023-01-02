@@ -1,17 +1,11 @@
-# In this problem, you will implement two-player Freestyle Gomoku with the following specifications:
+# In this problem, I implemented two-player Freestyle Gomoku with the following specifications:
 # a. The game must be implemented using only the Python standard library.
 # b. The game must be able to be run from the command line/terminal. No frontend.
 # c. The game must show the state and progression through ASCII graphics.
 # d. Players must be able to keep playing without restarting the script.
 # e. Players must be able to quit or give-up at any time.
 
-# Use Flake8 to understand PEP 8
-# Python Standard Library - https://docs.python.org/3.8/library/
-# Ø
 
-# rcmd on Windows search
-# C:\Users\Mat T\Downloads\EnvAI Solutions Files\software_engineer_assignment\assignment_one
-# idle freestyle_gomoku.py
 
 
 # ********************************** FREESTYLE_GOMOKU **********************************#
